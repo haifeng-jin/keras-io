@@ -842,6 +842,16 @@ API_MASTER = {
                             "title": "Tensorflow SavedModel layer",
                             "generate": ["keras.layers.TFSMLayer"],
                         },
+                        {
+                            "path": "jax_layer",
+                            "title": "JaxLayer",
+                            "generate": ["keras.layers.JaxLayer"],
+                        },
+                        {
+                            "path": "flax_layer",
+                            "title": "FlaxLayer",
+                            "generate": ["keras.layers.FlaxLayer"],
+                        },
                     ],
                 },
             ],
@@ -1155,6 +1165,7 @@ API_MASTER = {
                     "title": "Image ops",
                     "generate": [
                         "keras.ops.image.affine_transform",
+                        "keras.ops.image.crop_images",
                         "keras.ops.image.extract_patches",
                         "keras.ops.image.map_coordinates",
                         "keras.ops.image.pad_images",
